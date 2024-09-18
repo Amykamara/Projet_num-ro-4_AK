@@ -1,0 +1,57 @@
+body {
+  background-color: aqua;
+}
+
+h1 {
+  color: red;
+}
+
+h2 {
+  color: pink;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: blue;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .shrikhand-regular {
+    font-family: "Shrikhand", serif;
+  }
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+  }
+  /* Header */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+  }
+  .logo {
+    width: 55%;
+  }
+  /* section { background-color: #EAEAEA;} */
+  h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 62%;
+    height: 30%;
+    padding-left: 18%;
+    padding-right: 20%;
+  }
+  img {
+    width: 50%;
+  }
+} /*# sourceMappingURL=main.css.map */
