@@ -1,4 +1,4 @@
-// *{outline:1px solid red; }
+*{outline:1px solid red; }
 $font-stack: roboto-regular, sans-serif;
 $font-stack2: "Roboto", sans-serif;
 $font-stack3:"Shrikhand", serif;
@@ -26,7 +26,7 @@ $Background-color-cards:#EAEAEA;
 //   color: #353535;
 // }
 
-@media only screen and (max-width: 768px) {
+// @media only screen and (max-width: 768px) {
     .shrikhand-regular {
     font-family: "Shrikhand", serif;
 }
@@ -83,8 +83,8 @@ main {
     height: 400px;
     margin-top: 10%;
 }
-.second-subtitle{
-    height: 317px;} 
+// .second-subtitle{
+//     height: 317px;} 
 .steps { 
     display: flex;
     flex-direction: column;
@@ -93,7 +93,7 @@ main {
     height: 440px;
     padding-top: 3%;
     margin-top: 10%;
-    gap: 0%;
+    gap: 10%;
 }
 .cards-content {
     display: flex;
@@ -238,7 +238,7 @@ h1 {
     justify-content: center;
     align-items: center;
     background-color:$Background-color;
-    .gradient-btn{
+    #gradient-btn{
     width: 58%;
     height: 50px;
     border-radius: 37px;
@@ -250,11 +250,28 @@ h1 {
     font-size: 16px;
     padding-left: 0px;
     padding-right: 0px;
+    text-decoration: none;
 }
-}
-.gradient-btn :hover {
+:hover {
     color: #F6F6F6;
 }
+
+}
+#gradient-btn{
+    @include flexbox();
+a {
+    @include flexbox();
+    text-decoration: none;
+    color: white;
+    padding-top: 5%;
+    }
+}
+.Fonctionement {
+    width: 100%;
+    height: 318px;
+    margin-top: 10%;
+}
+
 .Fonctionement{
 h2 {
     width: 73%;
@@ -285,9 +302,12 @@ ul {
     background-color: $Background-color;
     padding-bottom: 20%;
 }
-.restaurants{
+#restaurants{
 @include flexdirectioncolumn();
 gap: 20px;
+h2{
+    margin-left: 5%;
+}
 }
 .card-content {
     display: flex;
@@ -365,7 +385,7 @@ width: 100%;
     padding: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
-}
+// }
 // footer//
 
 footer {
@@ -387,5 +407,78 @@ h3 {
     font-family: $font-stack3;
 }
 }
+@media screen and (min-width:769px) and (max-width: 1024px) {
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    height: 63px;
+    background-color: white;
+    padding: 0px;
+.logo {
+width: 30%;
+}
+}
+.location{
+    font-size: 28px;
+}
+.text-hp {
+    font-size: 14px;
+    }
 
+.explore-button{
+
+#gradient-btn{
+    width: 38%;
+    height: 56px;
+    font-size: 16px;
+}
+}
+.three-cards-set{
+    width: 100%;
+    height: 170px;
+    padding-top: 0px;
+}
+.steps { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 229px;
+    margin-top: 0px;
+    padding-top: 0%;
+    gap: 1%;
+}
+.ok { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 76.38px;
+}
+.Fonctionement {
+    width: 100%;
+    height: 239px;
+    margin-bottom: 0px;
+    margin-top: 0%;
+}
+.cards-content {
+    width: 85%;
+}
+#restaurants{
+    margin-top: 0px;
+}
+#restaurants{
+    h2{
+        margin-top: 0px;
+    }
+}
+.restaurant-cards {
+    padding-bottom: 0px;
+    margin-bottom: 5%;
+}
+
+}
+    // Header//
   /*# sourceMappingURL=main.css.map */
