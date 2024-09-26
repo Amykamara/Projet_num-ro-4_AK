@@ -413,7 +413,116 @@ h3 {
     margin-top: 16px;
 }
 } 
+
+main {
+    width: 100%;
+    max-width: 1440px;
 }
+.arrow{ 
+    display: flex;
+    justify-content: start;
+    gap: 274px; //pb //
+.logo { 
+    width: 25%;
+    object-fit: contain;
+}
+#arrow {
+    display: flex;
+    margin-right: 70px;
+} 
+}
+// Accueil section //    
+.accueil-section {
+    width: 100%;
+    height: 251px;
+}
+.img-menu {
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    object-fit: cover;
+}
+}
+// section-price
+.price {
+    @include flexdirectioncolumn;
+    margin-right: 68px;
+    margin-left: 66px;
+    width: 87%;
+.title-two{ 
+    @include flexbox;
+}
+.title-three{
+    display: inline-block;
+    width: 16%;
+    font-family: $font-stack2;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 0px;
+}
+.border-bottom{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 17%;
+}
+.border-btm{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 11%;
+}
+.colo {
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+.dessert {
+    @include flexdirectioncolumn;
+    gap:15px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.flat {
+    @include flexdirectioncolumn;
+    gap:15px;
+    padding-top: 40px;
+}
+}
+.card-content {
+    width: 100%;
+    border-radius: 15.04px;
+.card-title { 
+    font-family:$font-stack;
+    font-weight:normal;
+    font-size: 18px;
+    width: 96%;
+}
+.card-subtitle { 
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-stack2;
+    font-weight: lighter;
+    font-size: 15.04px;
+    width: 96%;
+}
+.euro {
+    width:27px;
+    font-weight: bold;
+    padding-right: 8px;
+}
+.card-txt {
+    width: 100%;
+}
+}
+.explore-button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$Background-color;
+    padding-bottom: 40px;
+}
+}
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 // header//
 header { 
@@ -1219,7 +1328,7 @@ h3 {
 }
 }
 }
-// Page 2 index html "La palette du goût"//
+// Pages des menus//
 @media #{$mobile}{
 
 // Navbar-section//
@@ -1260,11 +1369,23 @@ h3 {
     font-size: 28px;
 }
 .title-three{
-    width: 91%;
+    display: inline-block;
+    width: 16%;
     font-family: $font-stack2;
     font-weight: lighter;
     font-size: 16px;
     margin-left: 0px;
+    
+}
+.border-bottom{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 17%;
+}
+.border-btm{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 11%;
 }
 .colo {
     @include flexdirectioncolumn;
@@ -1304,7 +1425,7 @@ h3 {
     
     width:27px;
     font-weight: bold;
-    // margin-right: 14px;
+    padding-right: 8px;
 }
 .card-txt {
     width: 100%;
@@ -1319,7 +1440,115 @@ h3 {
     background-color:$Background-color;
     padding-bottom: 40px;
 }
-
 }
 
+@media #{$tablet}{
+    // Navbar-section//
+.arrow{ 
+    display: flex;
+    justify-content: start;
+    gap: 274px; //pb //
+.logo { 
+    width: 25%;
+    object-fit: contain;
+}
+#arrow {
+    display: flex;
+    margin-right: 70px;
+} 
+}
+// Accueil section //    
+.accueil-section {
+    width: 100%;
+    height: 251px;
+}
+.img-menu {
+    width: 100%;
+    height: 275px;
+    background-size: cover;
+    object-fit: cover;
+}
+
+// section-price
+.price {
+    @include flexdirectioncolumn;
+    margin-right: 68px;
+    margin-left: 66px;
+    width: 87%;
+.title-two{ 
+@include flexbox;
+}
+.title-three{
+    display: inline-block;
+    width: 16%;
+    font-family: $font-stack2;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-left: 0px;
+    
+}
+.border-bottom{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 17%;
+}
+.border-btm{
+    border-bottom: solid 3px #99E2D0;
+    padding-bottom: 2px;
+    width: 11%;
+}
+.colo {
+    width: 75%;
+    margin-left: 12%;
+    margin-right: 3%;
+.dessert {
+    @include flexdirectioncolumn;
+    gap:15px;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+.flat {
+    @include flexdirectioncolumn;
+    gap:15px;
+    padding-top: 40px;
+}
+}
+.card-content {
+    width: 85%;
+    border-radius: 15.04px;
+.card-title { 
+    font-family:$font-stack;
+    font-weight:normal;
+    font-size: 18px;
+    width: 96%;
+}
+.card-subtitle { 
+    display: flex;
+    justify-content: space-between;
+    font-family: $font-stack2;
+    font-weight: lighter;
+    font-size: 15.04px;
+    width: 96%;
+}
+.euro {
+    
+    width:27px;
+    font-weight: bold;
+    padding-right: 8px;
+}
+.card-txt {
+    width: 100%;
+}
+}
+.explore-button{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:$Background-color;
+    padding-bottom: 40px;
+}
+}
+}
   /*# sourceMappingURL=main.css.map */
