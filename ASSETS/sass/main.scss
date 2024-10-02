@@ -1,8 +1,8 @@
 @import "mixins.scss";
 @import "variable.scss";
+@import "animations\ .scss";
 
-
-*{outline:1px solid red;
+*{
 // .shrikhand-regular {
 //     font-family: "Shrikhand", serif;
 // }
@@ -68,7 +68,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 93%;
+    width: 78%;
     height: 73px;
     padding:0%;
     box-sizing: border-box;
@@ -80,7 +80,7 @@ main {
 }
 .ok { 
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     width: 60%;
     height: 73px;
@@ -172,13 +172,13 @@ main {
 }
 .menu { 
     padding-top: 1%;
-    height: 239px;
+    // height: 239px;
     background-color: $Background-color;
-    box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 9);
+    // box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 9);
 }
 .hp-block{
     width: 100%;
-    height: 205px;
+    // height: 205px;
 }
 h1 { 
     font-family: $font-stack;
@@ -467,12 +467,12 @@ main {
 .border-bottom{
     border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 17%;
+    width: 5%;
 }
 .border-btm{
     border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 11%;
+    width: 4%;
 }
 .colo {
     width: 95%;
@@ -560,7 +560,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 75%;
+    width: 81%;
     height: 65.38px;
     gap: 10%;
 }
@@ -573,12 +573,12 @@ h1 {
     display: block;
 }
 }
-.text-hp { 
-    width: 100%;
-    height: 49px;
-    padding: 0px;
-    margin: 0%;
-}
+// .text-hp { 
+//     width: 100%;
+//     height: 49px;
+//     padding: 0px;
+//     margin: 0%;
+// }
 .explore-button{
 #gradient-btn{
     width: 46%;
@@ -895,24 +895,28 @@ main {
     font-family:$font-stack;
     font-size: 16px;
     color:#353535;
-    width:30%;
+    width:41%;
     height:42px;
     padding-top: 0%;
     padding-left: 35%;
-    padding-right: 35%;
+    padding-right: 21%;
     margin-top: 0%;
     margin-bottom: 0%;
     box-shadow: 0px 0.1px 0.5px 0px rgba(9, 0, 0, 0.5);
+.marker {
+    padding-right: 20px;
+}
 }
 .menu { 
     padding-top: 1%;
-    height: 225px;
+    // height: 225px;
     background-color: $Background-color;
-    box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 9);
+    // box-shadow: 0px 0.5px 5px 1px rgba(0, 0, 0, 9);
 }
 .hp-block{
     width: 100%;
-    height: 205px;
+    // height: 205px;
+    padding-top: 30px;
 }
 h1 { 
     font-family: $font-stack;
@@ -938,16 +942,15 @@ h1 {
     justify-content: center;
     text-align: center;
     font-family:$font-stack2;
-    width: 100%;
-    height: 49px;
+    // width: 100%;
+    // height: 49px;
     font-weight: lighter;
     font-size: 16px;
-    padding-left: 0px;
+    width: 90%;
     padding-right: 0px;
-    padding-bottom: 0%;
-    margin-left: 0%;
-    margin-bottom: 0%;
-    margin-top: 0px;
+    padding-left: 0px;
+    margin-left: auto;
+    margin-right: auto;
     color: #000;
     background-color:$Background-color;
 }
@@ -967,9 +970,11 @@ h1 {
     box-shadow: 0px 4px 9.5px 0px rgba(9, 0, 0, 0.5);
     color: #FFFF;
     font-family: $font-stack;
-    font-size: 16px;
+    font-size: 15px;
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-decoration: none;
 }
 :hover {
@@ -1183,6 +1188,7 @@ h3 {
     padding-top: 26px;
     border-radius: 20px 20px 0px 0px;
     margin-top: -21px; 
+    margin-left: 39px;
     position: relative;
 .title-two{ 
     width: 91%;
@@ -1200,14 +1206,14 @@ h3 {
     
 }
 .border-bottom{
-    border-bottom: solid 3px #99E2D0;
+    border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 17%;
+    width: 5%;
 }
 .border-btm{
-    border-bottom: solid 3px #99E2D0;
+    border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 11%;
+    width: 5%;
 }
 .colo {
     @include flexdirectioncolumn;
@@ -1310,14 +1316,14 @@ h3 {
     
 }
 .border-bottom{
-    border-bottom: solid 3px #99E2D0;
+    border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 17%;
+    width: 5%;
 }
 .border-btm{
-    border-bottom: solid 3px #99E2D0;
+    border-bottom: solid 3px $main-Tertiary;
     padding-bottom: 2px;
-    width: 11%;
+    width: 5%;
 }
 .colo {
     width: 75%;
