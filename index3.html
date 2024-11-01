@@ -12,102 +12,194 @@
     <body>
         <header>
             <nav class="navbar arrow">
+                <div class="fleche">
                 <a href="index.html" alt="Homepage">
             <svg id="arrow" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.8856 21.9283L15.0335 22.7417C14.6727 23.0861 14.0892 23.0861 13.7323 22.7417L6.2706 15.6229C5.9098 15.2785 5.9098 14.7215 6.2706 14.3808L13.7323 7.2583C14.0931 6.9139 14.6765 6.9139 15.0335 7.2583L15.8856 8.07167C16.2502 8.41974 16.2425 8.98763 15.8702 9.32837L11.2451 13.5345H22.2764C22.7869 13.5345 23.1976 13.9265 23.1976 14.4138V15.5862C23.1976 16.0735 22.7869 16.4655 22.2764 16.4655H11.2451L15.8702 20.6716C16.2464 21.0124 16.254 21.5803 15.8856 21.9283Z" fill="#353535"/>
-                </svg></a>
+                </svg></a></div>
                 <img class="logo" src="Images-et-textes-Ohmyfood/images/logo/ohmyfood.png" alt="Ohmyfood"/>        
             </nav>
             </header>
     <main>
     <section class="accueil-section">
         <div>
-        <img class="img-menu" src="Images-et-textes-Ohmyfood/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+        <img class="img-menu" src="Images-et-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
         </div>
     </section>
     <section class="price">
-        <h2 class="title-two">Le délice des sens<svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12.2208 2.40551L12.2206 2.40576L11.3741 3.35732L11.0005 3.77727L10.627 3.35732L9.78047 2.40576L9.77992 2.40514C7.78271 0.152585 4.59762 -0.169649 2.47664 1.80201C-0.0175439 4.1245 -0.15494 8.32357 2.0848 10.8495L10.399 20.2148C10.399 20.2149 10.399 20.2149 10.3991 20.2149C10.7372 20.5955 11.2595 20.5955 11.5977 20.2149C11.5977 20.2149 11.5978 20.2149 11.5978 20.2148L19.9122 10.8493L19.9123 10.8492C22.1559 8.32335 22.0186 4.12461 19.5245 1.80213L12.2208 2.40551ZM12.2208 2.40551C14.2226 0.15233 17.4035 -0.169452 19.5243 1.80187L12.2208 2.40551Z" stroke="#101010"/>
-            </svg></h2>
+        <h2 class="title-two">Le délice des sens
+            <div class="like">
+            <input type="checkbox" id="heart-page2"/>
+            <label for="heart-page2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart">
+                    <defs>
+                        <linearGradient id="heartGradient" gradientTransform="rotate(50)">
+                            <stop offset="0%" stop-color="#9356DC" />
+                            <stop offset="100%" stop-color="#FF79DA" />
+                        </linearGradient>
+                    </defs>
+                    <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" class="heart-shape"/>
+                </svg>
+            </label>
+        </div></h2>
         <div>
         <div class="colo">
         <h3 class="title-three border-bottom">ENTRÉES</h3>
         <article>
-        <div class="card-content">
-        <div class="card-txt">
-        <p class="card-title">Tartare de thon</p>
-        <p class="card-subtitle">Assaisonné au yuzu<span class="euro"> 25€</span></p>
+            <div class="card-content" tabindex="0">
+                <div class="card-txt">
+                    <p class="card-title">Tartare de thon</p>
+                    <div class="card-info">
+                        <span class="card-subtitle">Assaisonné au yuzu</span>
+                        <span class="euro1">25€</span>
+                        <div class="card-numbers1">
+                            <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+        <div class="card-content" tabindex="0">
+            <div class="card-txt">
+                <p class="card-title">Bouchée de homard croustillant </p>
+                <div class="card-info">
+                    <span class="card-subtitle">Bouchée de homard croustillant </span>
+                    <span class="euro2">35€</span>
+                    <div class="card-numbers2">
+                        <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
         </div>
         </article>
         <article>
-        <div class="card-content">
-        <div class="card-txt">
-        <p class="card-title">Bouchée de homard croustillant </p>
-        <p class="card-subtitle">Et sa farandole de petits légumes<span class="euro"> 35€</span></p>
-        </div>
-        </article>
-        <article> 
-        <div class="card-content">
-            <div class="card-txt">
-            <p class="card-title">Poulet rôti aux herbes de Provence</p>
-            <p class="card-subtitle">Et sa crème de truffe<span class="euro"> 40€</span></p>
-        </div>
+            <div class="card-content" tabindex="0">
+                <div class="card-txt">
+                    <p class="card-title">Poulet rôti aux herbes de Provence </p>
+                    <div class="card-info">
+                        <span class="card-subtitle">Et sa crème de truffe</span>
+                        <span class="euro3">40€</span>
+                        <div class="card-numbers3">
+                            <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </article>
         <div class="flat">
             <h3 class="title-three border-btm">PLATS</h3>
-        <article>
-            <div class="card-content">
-                <div class="card-txt">
-                <p class="card-title">Poulet rôti aux herbes de Provence </p>
-                <p class="card-subtitle">Et sa crème de truffe<span class="euro"> 40€</span></p>
-            </div>
-        </article>
-        <article>
-            <div class="card-content">
-                <div class="card-txt">
-                <p class="card-title">Langouste rôtie </p>
-                <p class="card-subtitle">Et ses légumes de saison<span class="euro"> 35€</span></p>
-            </div>
-        </article>
-        <article>
-        <div class="card-content">
-            <div class="card-txt">
-            <p class="card-title">Côte de bœuf Angus</p>
-            <p class="card-subtitle">Et sa purée de panais<span class="euro"> 44€</span></p>
-        </div>
-        </article>
-        </div>
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Poulet rôti aux herbes de Provence </p>
+                        <div class="card-info">
+                            <span class="card-subtitle">Et sa crème de truffe</span>
+                            <span class="euro4">40€</span>
+                            <div class="card-numbers4">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Langouste rôtie </p>
+                        <div class="card-info">
+                            <span class="card-subtitle">Et ses légumes de saison</span>
+                            <span class="euro5">35€</span>
+                            <div class="card-numbers5">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Côte de bœuf Angus </p>
+                        <div class="card-info">
+                            <span class="card-subtitle">Et sa purée de panais</span>
+                            <span class="euro6">44€</span>
+                            <div class="card-numbers6">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            
         <div class="dessert">
             <h3 class="title-three border-btm">DESSERTS</h3>
-        <article>
-            <div class="card-content">
-                <div class="card-txt">
-                <p class="card-title">Farandole de desserts</p>
-                <p class="card-subtitle">Du chef<span class="euro"> 18€</span></p>
-            </div>
-        </article>
-        <article>
-            <div class="card-content">
-                <div class="card-txt">
-                <p class="card-title">Crème brulée</p>
-                <p class="card-subtitle">Revisité<span class="euro"> 22€</span></p>
-            </div>
-        </article>
-        <article>
-        <div class="card-content">
-            <div class="card-txt">
-            <p class="card-title">Tiramisu</p>
-            <p class="card-subtitle">À la noisette<span class="euro"> 23€</span></p>
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Farandole de desserts</p>
+                        <div class="card-info">
+                            <span class="card-subtitle">Du chef</span>
+                            <span class="euro7">18€</span>
+                            <div class="card-numbers7">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Crème brulée</p>
+                        <div class="card-info">
+                            <span class="card-subtitle">Revisitée</span>
+                            <span class="euro8">22€</span>
+                            <div class="card-numbers8">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+    
+            <article>
+                <div class="card-content" tabindex="0">
+                    <div class="card-txt">
+                        <p class="card-title">Tiramisu</p>
+                        <div class="card-info">
+                            <span class="card-subtitle">À la noisette</span>
+                            <span class="euro9">23€</span>
+                            <div class="card-numbers9">
+                                <svg class="checked" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.0847 10.9656C20.0847 16.4884 15.6076 20.9656 10.0847 20.9656C4.56185 20.9656 0.0847168 16.4884 0.0847168 10.9656C0.0847168 5.44271 4.56185 0.965576 10.0847 0.965576C15.6076 0.965576 20.0847 5.44271 20.0847 10.9656ZM8.92802 16.2605L16.3474 8.84114C16.5993 8.5892 16.5993 8.1807 16.3474 7.92876L15.435 7.01638C15.1831 6.76441 14.7746 6.76441 14.5226 7.01638L8.47181 13.0671L5.64685 10.2421C5.39492 9.99021 4.98641 9.99021 4.73443 10.2421L3.82206 11.1545C3.57012 11.4065 3.57012 11.815 3.82206 12.0669L8.0156 16.2605C8.26758 16.5124 8.67605 16.5124 8.92802 16.2605Z" fill="white"/>
+                                    </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
         </div>
-        </article>
-        </div>
-        </div>
-        </div>
-        <div class="explore-button"> 
-        <a id="gradient-btn" href="#">Commander</a>
-        </div>
-    </section>        
-    <footer>
+<footer>
         <div class="footer-section">
             <h3 class="">ohmyfood</h3>
             <article class="footer-text">
